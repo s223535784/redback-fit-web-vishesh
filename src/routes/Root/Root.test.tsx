@@ -1,7 +1,7 @@
-import { render, screen } from '@testing-library/react';
-import Root from './Root';
+import { screen } from '@testing-library/react';
 import { MockRouterProvider } from '../../../test-mocks/mock-providers.tsx';
-
+import { renderWithDeps } from '../../../jest.utils.tsx';
+import Root from './Root';
 
 jest.mock('react-router-dom', () => ({
 	...jest.requireActual('react-router-dom'),
@@ -9,13 +9,15 @@ jest.mock('react-router-dom', () => ({
 }));
 
 describe('<Root />', () => {
-	test('it should mount', () => {
-		render(<MockRouterProvider>
-			<Root/>
-		</MockRouterProvider>);
+	it('renders', () => {
+		renderWithDeps(
+			<MockRouterProvider>
+				<Root/>
+			</MockRouterProvider>
+		);
 
 		const root = screen.getByTestId('Root');
 
-		expect(root).toBeInTheDocument();
+		expect(root).toBeVisible();
 	});
 });

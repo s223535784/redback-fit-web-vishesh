@@ -1,7 +1,8 @@
 import { FC } from 'react';
 import { TemplateNameWrapper } from './TemplateName.style';
 
-type TemplateNameProps = {}
+// Replace with object specifying your props and their types, or remove if not needed
+type TemplateNameProps = unknown;
 
 const TemplateName: FC<TemplateNameProps> = () => {
 	return (

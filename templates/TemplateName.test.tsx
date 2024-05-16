@@ -1,13 +1,13 @@
-import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom/extend-expect';
+import { screen } from '@testing-library/react';
+import { renderWithDeps } from '../jest.utils';
 import TemplateName from './TemplateName';
 
 describe('<TemplateName />', () => {
-	test('it should mount', () => {
-		render(<TemplateName/>);
+	it('renders', () => {
+		renderWithDeps(<TemplateName/>);
 
 		const templateName = screen.getByTestId('TemplateName');
 
-		expect(templateName).toBeInTheDocument();
+		expect(templateName).toBeVisible();
 	});
 });

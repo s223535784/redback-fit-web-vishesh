@@ -1,13 +1,13 @@
-import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom/extend-expect';
+import { screen } from '@testing-library/react';
+import { renderWithDeps } from '../../../jest.utils.tsx';
 import ErrorPage from './ErrorPage';
 
 describe('<ErrorPage />', () => {
 	test('it should mount', () => {
-		render(<ErrorPage/>);
+		renderWithDeps(<ErrorPage/>);
 
 		const errorPage = screen.getByTestId('ErrorPage');
 
-		expect(errorPage).toBeInTheDocument();
+		expect(errorPage).toBeVisible();
 	});
 });

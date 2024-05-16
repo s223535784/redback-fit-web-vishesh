@@ -59,5 +59,21 @@
 			"warn",
 			{ "allowConstantExport": true }
 		]
-	}
+	},
+	"overrides": [
+		{
+			"files": ["*.style.ts"],
+			"rules": {
+				"indent": ["warn", "tab", {
+					"SwitchCase": 1,
+					"FunctionExpression": {
+						"parameters": 1,
+						"body": 1
+					},
+					"MemberExpression": 1,
+					"offsetTernaryExpressions": true
+				}]
+			}
+		}
+	]
 }
