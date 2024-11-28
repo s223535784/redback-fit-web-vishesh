@@ -5,7 +5,7 @@ import swimmerIcon from '../../assets/swimicon.png';
 import cyclingIcon from '../../assets/cyclingicon.png';
 import heartIcon from '../../assets/hearticon.png';
 import weightIcon from '../../assets/weighticon.png';
-import test1Audio from '../../assets/Welcome.mp3';
+import test1Audio from '../../assets/Welcome.m4a';
 
 // Badge Component with optional graphic icon
 const Badge: React.FC<{ name: string; icon?: React.ReactNode; tooltip?: string }> = ({ name, icon, tooltip }) => (
@@ -78,8 +78,7 @@ interface BadgeType {
   tooltip?: string; 
 }
 
-
-// Define a type for categories
+// Define the category type
 interface Category {
   name: string;
   description: string;
@@ -98,9 +97,9 @@ interface Category {
             badges: [
               { name: '', icon: <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}><img src={runnerIcon} alt="Running Icon" style={{ width: '80px', height: '80px' }} /><span style={{ marginTop: '18px', fontSize: '10px', color: 'white', fontWeight: 'bold' }}>Pace Master</span></div>, tooltip: 'To attain this badge, maintain exercise heartrate for thirty minutes' },
               { name: '', icon: <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}><img src={runnerIcon} alt="Running Icon" style={{ width: '80px', height: '80px' }} /><span style={{ marginTop: '18px', fontSize: '10px', color: 'white', fontWeight: 'bold' }}>Sprint Champion</span></div>, tooltip: 'To attain this badge, complete a hundred 100m sprints' },
-              { name: '', icon: <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}><img src={runnerIcon} alt="Running Icon" style={{ width: '80px', height: '80px' }} /><span style={{ marginTop: '18px', fontSize: '10px', color: 'white', fontWeight: 'bold' }}>Marathon Man</span></div>, tooltip: 'To attain this badge, run a marathon (42.1km) without walking' },
               { name: '', icon: <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}><img src={runnerIcon} alt="Running Icon" style={{ width: '80px', height: '80px' }} /><span style={{ marginTop: '18px', fontSize: '10px', color: 'white', fontWeight: 'bold' }}>Half Bannister</span></div>, tooltip: 'To attain this badge, run an 8 minute mile' },
               { name: '', icon: <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}><img src={runnerIcon} alt="Running Icon" style={{ width: '80px', height: '80px' }} /><span style={{ marginTop: '18px', fontSize: '10px', color: 'white', fontWeight: 'bold' }}>Step Up Week</span></div>, tooltip: 'To attain this badge, complete 100,000 steps in a week' },
+              { name: '', icon: <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}><img src={runnerIcon} alt="Running Icon" style={{ width: '80px', height: '80px' }} /><span style={{ marginTop: '18px', fontSize: '10px', color: 'white', fontWeight: 'bold' }}>Marathon Man</span></div>, tooltip: 'To attain this badge, run a marathon (42.1km) without walking' },
               { name: '', icon: <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}><img src={runnerIcon} alt="Running Icon" style={{ width: '80px', height: '80px' }} /><span style={{ marginTop: '18px', fontSize: '10px', color: 'white', fontWeight: 'bold' }}>Running Uphill</span></div>, tooltip: 'To attain this badge, complete a run with elevation gains of 1000 meters' },
               { name: '', icon: <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}><img src={runnerIcon} alt="Running Icon" style={{ width: '80px', height: '80px' }} /><span style={{ marginTop: '18px', fontSize: '10px', color: 'white', fontWeight: 'bold' }}>5 Miler</span></div>, tooltip: 'To attain this badge, complete 5-mile run'},
               { name: '', icon: <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}><img src={runnerIcon} alt="Running Icon" style={{ width: '80px', height: '80px' }} /><span style={{ marginTop: '18px', fontSize: '10px', color: 'white', fontWeight: 'bold' }}>Zato-Combo</span></div>, tooltip: 'To attain this badge, complete a 5km, 10km and marathon run within a week' },
@@ -141,8 +140,8 @@ interface Category {
     description: `Achieve balance with insights into sleep, recovery, and wellness. Monitor rest patterns, identify recovery times, and understand how to optimize your routine for better performance and long-term health.`,
     link: '/categories/recovery',
     badges: [
+      { name: '', icon: <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}><img src={heartIcon} alt="Heart Icon" style={{ width: '80px', height: '80px' }} /><span style={{ marginTop: '18px', fontSize: '10px', color: 'white', fontWeight: 'bold' }}>Sleep to Recover</span></div>, tooltip: 'To attain this badge, achieve a fortnite of consistent sleeping times(within an hour)' },
       { name: '', icon: <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}><img src={heartIcon} alt="Heart Icon" style={{ width: '80px', height: '80px' }} /><span style={{ marginTop: '18px', fontSize: '10px', color: 'white', fontWeight: 'bold' }}>Seven for Seven</span></div>, tooltip: 'To attain this badge, sleep for seven hours for seven days' },
-      { name: '', icon: <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}><img src={heartIcon} alt="Heart Icon" style={{ width: '80px', height: '80px' }} /><span style={{ marginTop: '18px', fontSize: '10px', color: 'white', fontWeight: 'bold' }}>Sleep to Recover</span></div>, tooltip: 'To attain this badge, achieve a fortnight of consistent sleeping times(within an hour)' },
       { name: '', icon: <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}><img src={heartIcon} alt="Heart Icon" style={{ width: '80px', height: '80px' }} /><span style={{ marginTop: '18px', fontSize: '10px', color: 'white', fontWeight: 'bold' }}>HR Reducer</span></div>, tooltip: 'To attain this badge, reduce resting heart rate by 10%' },
       { name: '', icon: <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}><img src={heartIcon} alt="Heart Icon" style={{ width: '80px', height: '80px' }} /><span style={{ marginTop: '18px', fontSize: '10px', color: 'white', fontWeight: 'bold' }}>Sauna Superstar</span></div>, tooltip: 'To attain this badge, increase body temperature without movement (body temperature increase one degree)' },
       { name: '', icon: <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}><img src={heartIcon} alt="Heart Icon" style={{ width: '80px', height: '80px' }} /><span style={{ marginTop: '18px', fontSize: '10px', color: 'white', fontWeight: 'bold' }}>Post Work Ice</span></div>, tooltip: 'To attain this badge, take an ice bath after sustained exercise (skin temperature 10Celsius for 5 minutes)' },
@@ -156,7 +155,7 @@ interface Category {
     link: '/categories/training-plans',
     badges: [
       { name: '', icon: <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}><img src={weightIcon} alt="Weight Icon" style={{ width: '80px', height: '80px' }} /><span style={{ marginTop: '18px', fontSize: '10px', color: 'white', fontWeight: 'bold' }}>Try Athlete</span></div>, tooltip: 'To attain this badge, swim 300 meters, run 1km & cycle 20 kms in a day ' },
-        { name: '', icon: <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}><img src={weightIcon} alt="Weight Icon" style={{ width: '80px', height: '80px' }} /><span style={{ marginTop: '18px', fontSize: '10px', color: 'white', fontWeight: 'bold' }}>Third Time</span></div>, tooltip: 'To attain this badge, complete three hour-long workout sessions in a day ' },
+        { name: '', icon: <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}><img src={weightIcon} alt="Weight Icon" style={{ width: '80px', height: '80px' }} /><span style={{ marginTop: '18px', fontSize: '10px', color: 'white', fontWeight: 'bold' }}>Third Time</span></div>, tooltip: 'To attain this badge, complete three hour long workout sessions in a day ' },
         { name: '', icon: <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}><img src={weightIcon} alt="Weight Icon" style={{ width: '80px', height: '80px' }} /><span style={{ marginTop: '18px', fontSize: '10px', color: 'white', fontWeight: 'bold' }}>King Consistency</span></div>, tooltip: 'To attain this badge, move for thirty consecutive minutes for thirty days' },
         { name: '', icon: <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}><img src={weightIcon} alt="Weight Icon" style={{ width: '80px', height: '80px' }} /><span style={{ marginTop: '18px', fontSize: '10px', color: 'white', fontWeight: 'bold' }}>Burn Up</span></div>, tooltip: 'To attain this badge, burn 700 calories in a workout session' },
         { name: '', icon: <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}><img src={weightIcon} alt="Weight Icon" style={{ width: '80px', height: '80px' }} /><span style={{ marginTop: '18px', fontSize: '10px', color: 'white', fontWeight: 'bold' }}>Steady Eddie</span></div>, tooltip: 'To attain this badge, maintain aerobic zone heartrate for 30 minutes' },
@@ -177,17 +176,10 @@ const Categories: React.FC = () => {
   const toggleBadges = (categoryName: string) => {
     setExpandedCategory(expandedCategory === categoryName ? null : categoryName);
   };
-  const [hasPlayedAudio, setHasPlayedAudio] = useState(false); 
-  const [isPlaying, setIsPlaying] = useState(false);
   
   const playAudio = () => {
-    if (!hasPlayedAudio && !isPlaying) {
-    const audio = new Audio(test1Audio); 
-    setIsPlaying(true);// Use imported path
+    const audio = new Audio(test1Audio); // Use imported path
     audio.play();
-    audio.onended = () => setIsPlaying(false);
-    setHasPlayedAudio(true);
-    }
   };
   
   return (
@@ -286,71 +278,10 @@ const Categories: React.FC = () => {
 
         {/* Other Content */}
         <Footer />
-}
-
-const categories: Category[] = [
-  {
-    name: 'Cycling Performance',
-    description: 'Track cadence, speed, and power output to optimize your cycling routines and hit new personal bests.',
-    link: '/categories/cycling',
-  },
-  {
-    name: 'Running Insights',
-    description: 'Analyze pace, stride length, and heart rate to achieve your running goals effectively.',
-    link: '/categories/running',
-  },
-  {
-    name: 'Swimming Analytics',
-    description: 'Monitor stroke rate, lap times, and breathing patterns for smarter swim training.',
-    link: '/categories/swimming',
-  },
-  {
-    name: 'Recovery & Health',
-    description: 'Understand your recovery times, sleep quality, and overall wellness for balanced training.',
-    link: '/categories/recovery',
-  },
-  {
-    name: 'Custom Training Plans',
-    description: 'Create and customize training schedules tailored to your sport and fitness goals.',
-    link: '/categories/training-plans',
-  },
-];
-
-const Categories: React.FC = () => {
-  return (
-    <div style={{ padding: '20px' }}>
-      <h1 style={{ textAlign: 'center' }}>Explore Categories</h1>
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', justifyContent: 'center' }}>
-        {categories.map((category) => (
-          <div
-            key={category.name}
-            style={{
-              border: '1px solid white',
-              borderRadius: '10px',
-              padding: '20px',
-              width: '300px',
-              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-              textAlign: 'center',
-              color: 'white',
-            }}
-          >
-            <h3>{category.name}</h3>
-            <p>{category.description}</p>
-            <a
-              href={category.link}
-              style={{
-                color: '#007BFF',
-                textDecoration: 'none',
-                fontWeight: 'bold',
-              }}
-            >
-              Learn More
-            </a>
-          </div>
-        ))}
       </div>
     </div>
   );
 };
+
 export default Categories;
 
