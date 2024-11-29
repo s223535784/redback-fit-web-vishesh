@@ -2,8 +2,8 @@ import * as React from 'react';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { DateCalendar } from '@mui/x-date-pickers/DateCalendar';
-import { HiBell } from 'react-icons/hi';  
-import { FaMagnifyingGlass } from 'react-icons/fa6'; 
+import { HiBell } from 'react-icons/hi';
+import { FaMagnifyingGlass } from 'react-icons/fa6';
 import styles from '../../routes/Dashboard/Dashboard.module.css';
 import ProfilePic from '../../assets/ProfilePic.png'; // Import profile picture
 import SessionTable from '../SessionsTable/SessionsTable';
@@ -13,6 +13,8 @@ import Stack from '@mui/material/Stack';
 import { LineChart } from '@mui/x-charts/LineChart';
 import RadarChart from '../RadarChart/RadarChart';  // Adjust the path as needed
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import ProfileAvatar from "../ProfileAvatar/ProfileAvatar";
+import NotificationBell from "../NotificationBell/NotificationBell";
 
 
 
@@ -23,15 +25,15 @@ const DashboardLanding: React.FC = () => {
 			MuiIconButton: {
 				styleOverrides: {
 					root: {
-						color: 'white', 
+						color: 'white',
 					},
 				},
 			},
 		},
 	});
 
-      
-   
+
+
 	return (
 		<main className={styles.mainContainerLanding}>
 			<div className={styles.topBar}>
@@ -42,18 +44,20 @@ const DashboardLanding: React.FC = () => {
 						<input type="search" className={styles.searchInput} placeholder="Search" />
 					</div>
 					<HiBell className={styles.bellIcon} />
-					<div className={styles.profileIcon} style={{ backgroundImage: `url(${ProfilePic})` }}></div>  
+					{/*<div className={styles.profileIcon} style={{ backgroundImage: `url(${ProfilePic})` }}></div>  */}
+					{/*<NotificationBell/>*/}
+					<ProfileAvatar/>
 				</div>
 			</div>
 			<div className={styles.heartRateCalSection}>
 				<div className={styles.heartRateWindow}>
 					<h3 className={styles.componentText}>Heart Rate</h3>
 					<p className={styles.componentText}>Graph and test data representing Heart Rate</p>
-					<LineChart
-						xAxis={[{ data: [1, 2, 3, 4, 5, 6] }]}  
-						series={[{
-							data: [0, 1, 3, 5.5, 7, 10]  
-						}]}
+					<LineChart className={styles.lineChart}
+							   xAxis={[{ data: [1, 2, 3, 4, 5, 6] }]}
+							   series={[{
+								   data: [0, 1, 3, 5.5, 7, 10]
+							   }]}
 					/>
 				</div>
 				<div className={styles.calV02Box}>

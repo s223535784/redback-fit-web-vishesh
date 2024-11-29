@@ -1,0 +1,45 @@
+/* 外层容器样式 */
+.profile-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* 用户头像样式 */
+.profile-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* 悬浮窗样式 */
+.profile-popup {
+    position: absolute;
+    top: 50px; /* 调整悬浮窗相对头像的位置 */
+    right: 0;
+    background-color: #1e1e2f;
+    color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    min-width: 150px;
+    text-align: left;
+}
+
+/* 按钮样式 */
+.profile-button {
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    color: white;
+    padding: 8px 0;
+    text-align: left;
+    cursor: pointer;
+}
+
+.profile-button:hover {
+    background-color: #4a90e2;
+}

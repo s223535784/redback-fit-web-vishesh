@@ -8,6 +8,7 @@ import ReportPage from './routes/Report/ReportPage.tsx';
 import HomePage from './routes/HomePage/HomePage.tsx';
 import DataPredictions from './components/DashboardDataPredictions/DashboardDataPredictions.tsx';
 import DashboardLanding from './components/DashboardLanding/DashboardLanding.tsx';
+import ProfilePage from "./routes/ProfilePage/ProfilePage";
 import Categories from './components/Categories/Categories.tsx';
 import ReportPageContent from './components/Report/ReportPageContent.tsx';
 
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
 			{
 				path: 'login',
 				element: <LoginPage />
+			},
+			{
+				path:'profile',
+				element:<ProfilePage />
 			},
 			{
 				path: 'dashboard',

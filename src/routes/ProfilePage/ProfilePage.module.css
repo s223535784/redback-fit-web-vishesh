@@ -1,0 +1,116 @@
+
+
+.profilePageContainer {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #2E3944;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    gap: 20px;
+}
+
+.backButton {
+    background-color: #ff3465;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    align-self: flex-start; /* Align back button to the top left */
+}
+
+.backButton:hover {
+    background-color: #ff577a;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center all form elements */
+    gap: 20px;
+    width: 100%; /* Make the container span the full width */
+}
+
+.avatarSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.uploadButton {
+    background-color: #ff3465;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.uploadButton:hover {
+    background-color: #ff577a;
+}
+
+.uploadInput {
+    display: none; /* Hide the default file input */
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align labels to the left */
+    width: 80%; /* Make each input group span the full width */
+    max-width: 500px; /* Limit the maximum width */
+}
+
+.formLabel {
+    margin-bottom: 5px;
+    font-size: 16px;
+    text-align: left; /* Ensure labels are left-aligned */
+    width: 100%; /* Ensure the label spans the full width of the formGroup */
+}
+
+.formInput,
+.formSelect {
+    width: 100%; /* Full width within the container */
+    padding: 12px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #3a3f44;
+    color: white;
+    font-size: 16px;
+    text-align: center; /* Center-align the input text */
+}
+
+.formInput::placeholder {
+    text-align: left; /* Ensure placeholder text is left-aligned */
+}
+
+.saveButton {
+    background-color: #ff3465;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    width: 50%; /* Center-align the save button and give it a fixed width */
+    max-width: 200px; /* Restrict maximum width */
+}
+
+.saveButton:hover {
+    background-color: #ff577a;
+}
