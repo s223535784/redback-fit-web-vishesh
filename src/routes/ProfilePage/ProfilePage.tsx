@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-import styles from "./ProfilePage.module.css";
+import React, { useState } from 'react';
+import styles from './ProfilePage.module.css';
 
 const ProfilePage: React.FC = () => {
 	const [userData, setUserData] = useState({
-		name: "Athlete Jack",
-		account: "jack@example.com",
-		birthDate: "2000-01-01",
-		gender: "Male",
+		name: 'Austin Blaze',
+		account: 'redback.operations@deakin.edu.au',
+		birthDate: '2000-01-01',
+		gender: 'Male',
 	});
-	const [avatar, setAvatar] = useState("src/assets/ProfilePic.png"); // Default avatar path
+	const [avatar, setAvatar] = useState('src/assets/ProfilePic.png'); // Default avatar path
 
 	const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 		const { name, value } = e.target;
@@ -28,7 +28,7 @@ const ProfilePage: React.FC = () => {
 	};
 
 	const handleSave = () => {
-		alert("User profile saved!");
+		alert('User profile saved!');
 	};
 
 	const handleBack = () => {

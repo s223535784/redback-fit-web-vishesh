@@ -1,19 +1,22 @@
 import styles from '../../routes/HomePage/HomePage.module.css';
+import icon1 from '../../assets/icon1.png';
+import icon2 from '../../assets/icon2.png';
+import icon3 from '../../assets/icon3.png';
 
 const Work = () => {
 	const workInfoData = [
 		{
-			image: 'https://cdn-icons-png.flaticon.com/512/6462/6462782.png',
+			image: icon1,
 			title: 'Predictive Tools Support',
 			text: 'Utilize VO2 Max, FTP, and Race Prediction models to forecast your performance.',
 		},
 		{
-			image: 'https://cdn-icons-png.flaticon.com/512/8062/8062339.png',
+			image: icon2,
 			title: 'Custom Training Programs',
 			text: 'Generate personalized training plans based on your unique data and goals.',
 		},
 		{
-			image: 'https://cdn-icons-png.flaticon.com/512/4882/4882406.png',
+			image: icon3,
 			title: 'Comprehensive Dashboard',
 			text: 'Visualize your progress and metrics through an intuitive, user-friendly interface.',
 		},

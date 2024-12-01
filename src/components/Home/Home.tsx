@@ -1,30 +1,16 @@
-import BannerBackground from '../../assets/home-banner-background.png';
 import Navbar from '.././NavBar/NavBar';
-import { FiArrowRight } from 'react-icons/fi';
 import styles from '../../routes/HomePage/HomePage.module.css';
+import videoSrc from '../../assets/5790148-hd_1920_1080_30fps.mp4';
+import './Home.css';
 
 const Home = () => {
 	return (
 		<div className={styles['home-container']}>
 			<Navbar />
-			<div className={styles['home-banner-container']}>
-				<div className={styles['home-bannerImage-container']}>
-					<img src={BannerBackground} alt="" />
-				</div>
-				<div className={styles['home-text-section']}>
-					<h1 className={styles['primary-heading']}>
-            Elevate Your Game with Advanced Wearable Tech
-					</h1>
-					<p className={styles['primary-text']}>
-            Harness advanced data analytics and predictive models to reach your athletic potential across multiple sports disciplines.
-					</p>
-					<button className={styles['secondary-button']}>
-            Start Your Journey <FiArrowRight />
-					</button>
-				</div>
-				<div className={styles['home-image-section']}>
-					<img src="https://honehealth.com/wp-content/uploads/2023/04/Muscles_Worked-Running-1.webp" alt="" />
-				</div>
+			<div className='hero-container'>
+				<video src={videoSrc} autoPlay loop muted />
+				<h1>Elevate with Advanced Wearables</h1>
+				<p>Harness advanced data analytics and predictive models to reach your athletic potential across multiple sports disciplines.</p>
 			</div>
 		</div>
 	);

@@ -42,7 +42,7 @@ function SortButton({
     onClick: MouseEventHandler<HTMLButtonElement>;
   }) {
 	return (
-		<button
+		<button style={{ backgroundColor:'black' }}
 			onClick={onClick}
 			className={`${
 				sortKey === columnKey && sortOrder === 'desc'
@@ -64,7 +64,7 @@ function SessionTable({ data }: { data: Data }) {
 		{ key: 'coach', label: 'Coach' },
 		{ key: 'duration', label: 'Duration' },
 		{ key: 'date', label: 'Date' },
-		{ key: 'typeOfTraining', label: 'Type Of Training' },
+		{ key: 'typeOfTraining', label: 'Training' },
 	];
   
 	const sortedData = useCallback(

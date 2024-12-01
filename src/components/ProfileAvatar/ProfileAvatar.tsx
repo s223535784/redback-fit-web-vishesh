@@ -1,9 +1,10 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './ProfileAvatar.css';
 import ProfilePic from '../../assets/ProfilePic.png';
 
 const ProfileAvatar: React.FC = () => {
+
 	const [isPopupVisible, setIsPopupVisible] = useState(false);
 	const [isLoggedIn, setIsLoggedIn] = useState(true); // Login state
 	const navigate = useNavigate();
@@ -59,7 +60,7 @@ const ProfileAvatar: React.FC = () => {
 							<p> Username</p>
 							<button
 								className="profile-button"
-								onClick={() => navigate('/settings')}
+								onClick={() => navigate('/dashboard/settings')}
 							>
 								Settings
 							</button>

@@ -10,7 +10,7 @@ import Footer from '../../components/Footer/Footer.tsx';
 function HomePage() {
 	useEffect(() => {
 		// Set the body background color when the HomePage mounts
-		document.body.style.backgroundColor = '#212A31';
+		document.body.style.backgroundColor = '#f8f9fa';
 
 		// Reset the background color when the HomePage unmounts
 		return () => {

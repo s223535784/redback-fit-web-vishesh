@@ -8,9 +8,11 @@ import ReportPage from './routes/Report/ReportPage.tsx';
 import HomePage from './routes/HomePage/HomePage.tsx';
 import DataPredictions from './components/DashboardDataPredictions/DashboardDataPredictions.tsx';
 import DashboardLanding from './components/DashboardLanding/DashboardLanding.tsx';
-import ProfilePage from "./routes/ProfilePage/ProfilePage";
+import ProfilePage from './routes/ProfilePage/ProfilePage';
 import Categories from './components/Categories/Categories.tsx';
 import ReportPageContent from './components/Report/ReportPageContent.tsx';
+import Features from './components/Features/Features.tsx';
+import SettingsPage from './components/Settings/Settings.tsx';
 
 const router = createBrowserRouter([
 	{
@@ -44,7 +46,16 @@ const router = createBrowserRouter([
 					{
 						path: 'categories',
 						element: <Categories />,
-					}
+					},
+					{
+						path: 'features',
+						element: <Features />,
+					},
+					{
+						path: 'settings',
+						element: <SettingsPage />,
+					},
+
 				]
 			},
 			{

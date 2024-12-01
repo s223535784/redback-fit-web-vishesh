@@ -1,20 +1,10 @@
 import React, { useState } from 'react';
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { DateCalendar } from '@mui/x-date-pickers/DateCalendar';
-import { HiBell } from 'react-icons/hi';
-import { FaMagnifyingGlass } from 'react-icons/fa6';
 import styles from '../../routes/Report/Report.module.css';
 import ProfilePic from '../../assets/ProfilePic.png'; // Import profile picture
 import SessionTable from '../SessionsTable/SessionsTable';
 import data from '../SessionsTable/sessionData.json';
-import { Gauge } from '@mui/x-charts-pro';
-import Stack from '@mui/material/Stack';
-import { LineChart } from '@mui/x-charts/LineChart';
-import RadarChart from '../RadarChart/RadarChart';  // Adjust the path as needed
 import { Card, CardContent, Typography, Grid, CircularProgress, Box } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-
 
 interface RecordType {
 	id: number;
@@ -87,13 +77,13 @@ const DashboardLanding: React.FC = () => {
 			MuiIconButton: {
 				styleOverrides: {
 					root: {
-						color: 'white',
+						color: 'black',
 					},
 				},
 			},
 		},
 		typography: {
-			fontFamily: "'Roboto', sans-serif",
+			fontFamily: '\'Roboto\', sans-serif',
 		},
 		palette: {
 			primary: {
@@ -125,7 +115,7 @@ const DashboardLanding: React.FC = () => {
 						{/* Heart Rate and Zone Minutes */}
 						<Grid container spacing={2} alignItems="center" justifyContent="center">
 							<Grid item xs={12} sm={6}>
-								<Card sx={{ backgroundColor: '#2E3944', color: 'white', textAlign: 'center' }}>
+								<Card sx={{ backgroundColor: ' #e97462', color: 'black', textAlign: 'center' }}>
 									<CardContent>
 										<Typography variant="h6">Heart Rate</Typography>
 										<CircularProgress
@@ -143,7 +133,7 @@ const DashboardLanding: React.FC = () => {
 							</Grid>
 
 							<Grid item xs={12} sm={6}>
-								<Card sx={{ backgroundColor: '#2E3944', color: 'white', textAlign: 'center' }}>
+								<Card sx={{ backgroundColor: ' #e97462', color: 'black', textAlign: 'center' }}>
 									<CardContent>
 										<Typography variant="h6">Zone Minutes</Typography>
 										<CircularProgress
@@ -163,7 +153,7 @@ const DashboardLanding: React.FC = () => {
 
 						{/* Exercise Days */}
 						<Box sx={{ marginTop: '20px' }}>
-							<Card sx={{ backgroundColor: '#2E3944', color: 'white' }}>
+							<Card sx={{ backgroundColor: ' #e97462', color: 'black' }}>
 								<CardContent>
 									<Typography variant="h6">Exercise Days</Typography>
 									<Typography variant="body1">{mockData.exerciseDays} of 5 this week</Typography>
@@ -174,7 +164,7 @@ const DashboardLanding: React.FC = () => {
 						{/* Stats (Distance, Calories, Floors) */}
 						<Grid container spacing={2} sx={{ marginTop: '20px' }}>
 							<Grid item xs={6}>
-								<Card sx={{ backgroundColor: '#2E3944', color: 'white' }}>
+								<Card sx={{ backgroundColor: ' #e97462', color: 'black' }}>
 									<CardContent>
 										<Typography variant="h6">Distance</Typography>
 										<Typography variant="h4">{mockData.distance} mi</Typography>
@@ -183,7 +173,7 @@ const DashboardLanding: React.FC = () => {
 							</Grid>
 
 							<Grid item xs={6}>
-								<Card sx={{ backgroundColor: '#2E3944', color: 'white' }}>
+								<Card sx={{ backgroundColor: ' #e97462', color: 'black' }}>
 									<CardContent>
 										<Typography variant="h6">Calories</Typography>
 										<Typography variant="h4">{mockData.calories}</Typography>
@@ -194,7 +184,7 @@ const DashboardLanding: React.FC = () => {
 
 						<Grid container spacing={2} sx={{ marginTop: '20px' }}>
 							<Grid item xs={6}>
-								<Card sx={{ backgroundColor: '#2E3944', color: 'white' }}>
+								<Card sx={{ backgroundColor: ' #e97462', color: 'black' }}>
 									<CardContent>
 										<Typography variant="h6">Steps</Typography>
 										<Typography variant="h4">{mockData.steps}</Typography>
@@ -203,7 +193,7 @@ const DashboardLanding: React.FC = () => {
 							</Grid>
 
 							<Grid item xs={6}>
-								<Card sx={{ backgroundColor: '#2E3944', color: 'white' }}>
+								<Card sx={{ backgroundColor: ' #e97462', color: 'black' }}>
 									<CardContent>
 										<Typography variant="h6">Floors</Typography>
 										<Typography variant="h4">{mockData.floors}</Typography>
@@ -214,7 +204,7 @@ const DashboardLanding: React.FC = () => {
 
 						{/* Sleep Duration */}
 						<Box sx={{ marginTop: '20px', marginBottom: '20px' }}>
-							<Card sx={{ backgroundColor: '#2E3944', color: 'white' }}>
+							<Card sx={{ backgroundColor: ' #e97462', color: 'black' }}>
 								<CardContent>
 									<Typography variant="h6">Sleep Duration</Typography>
 									<Typography variant="h4">{mockData.sleepDuration}</Typography>
@@ -222,7 +212,7 @@ const DashboardLanding: React.FC = () => {
 							</Card>
 						</Box>
 
-						<div className={styles.heartRateCalSection}>
+						<div className={styles.sideBySideComponents}>
 							<div className={styles.SessionsProfileWindow}>
 								<h1>Your Sessions</h1>
 								<SessionTable data={data}>

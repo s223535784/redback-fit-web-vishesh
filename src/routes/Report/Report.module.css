@@ -8,7 +8,7 @@ Perhaps look into fixing / changing these names if you notice elements unintenti
 body {
   margin: 0;
   padding: 0;
-  color: #212A31; /* Managed in Dashboard.tsx */
+  color: ; /* Managed in Dashboard.tsx */
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -183,9 +183,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* Aligns content to the left */
-  background-color: rgba(255, 255, 255, 0.068);  /* Equivalent to #ffffff10 */
+  background-color:#f8f9fa;  /* Equivalent to #ffffff10 */
   border-radius: 10px;  /* More noticeable curvature */
-  border: 0.1px solid #ffffff52;  /* Specifies style and color together */
+  border: 0.1px solid black;  /* Specifies style and color together */
 }
 
 /* Style for the Dashboard Title */
@@ -193,7 +193,7 @@ body {
   width: 90%; /* Ensures the title spans most of the container width */
   margin-bottom: 10px; /* Space between title and content */
   font-size: 42px; /* Adjust font size as needed */
-  color: WHITE; /* Adjust color as needed */
+  color: black; /* Adjust color as needed */
   align-self: flex-start; /* Aligns the title to the left */
   padding-left: 20px;
 }
@@ -253,11 +253,12 @@ body {
 }
 
 .SessionsProfileWindow {
-  background-color: #2E3944;
+  max-width: 100%;
+  flex: 1 1 calc(50% - 20px);
+  margin: 10px;
+  background-color: #e97462;
   border-radius: 8px;
   padding: 20px;
-  margin-bottom: 80px;
-  margin-right: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: 1s;
 }
@@ -379,7 +380,7 @@ body {
 }
 
 .SessionsProfileWindow h1{
-  color: white;
+  color: black;
   margin-bottom: 20px;
 }
 
@@ -395,12 +396,14 @@ body {
 .SessionsProfileWindow tbody{
   background:#748D92  ;
   color: #f6cefc;
+  background:#e97462d8  ;
+  color: #000000;
   
 }
 
 .SessionsProfileWindow td{
   text-align: center;
-  color: white;
+  color: black;
   font-weight: 500;
   width: 125%;
   font-size: 17px;

@@ -161,7 +161,7 @@ const DashboardDataPredictions: React.FC = () => {
 						<input {...getInputProps()} />
 						<p>Drag or click to select files:</p>
 						<p>(.csv, .xls, .xlsx)</p>
-						<FaFileAlt size={50} color="#FF3465" style={{ marginTop: '20px' }} />
+						<FaFileAlt size={50} color="#e97462" style={{ marginTop: '20px' }} />
 					</div>
 				) : (
 					<div>

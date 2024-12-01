@@ -21,7 +21,7 @@ const Footer = () => {
 		<div className={styles['footer-wrapper']}>
 			<div className={styles['footer-section-one']}>
 				<div className={styles['footer-logo-container']}>
-					<p className={styles['primary-subheading']}>Athlete Wearable Technology</p>
+					<p className={styles['primary-subheading']}>ReflexionPro</p>
 				</div>
 				<div className={styles['footer-icons']}>
 					<BsTwitter />
@@ -45,8 +45,8 @@ const Footer = () => {
 			<div className={styles['footer-section-two']}>
 				<div className={styles['footer-section-columns']}>
 					<span>244-5333-7783</span>
-					<span>info@athletewearabletech.com</span>
-					<span>support@athletewearabletech.com</span>
+					<span>contact@reflexionpro.com</span>
+					<span>support@reflexionpro.com</span>
 					<span>© Athlete Wearable Technology</span>
 				</div>
 				<div className={styles['footer-section-columns']}>
@@ -60,7 +60,7 @@ const Footer = () => {
 					<div className={styles['modal-container']}>
 						<h2>Terms and Conditions</h2>
 						<p>
-							Welcome to Athlete Wearable Technology!
+							Welcome to ReflexionPro!
 						</p>
 						<p>
 							-
@@ -74,7 +74,7 @@ const Footer = () => {
 							-
 						</p>
 						<p>
-							If you have any questions or concerns, please contact support at support@athletewearabletech.com
+							If you have any questions or concerns, please contact support at support@reflexionpro.com
 						</p>
 						<button onClick={toggleTermsModal} className={styles['close-button']}>
 							Close
@@ -94,7 +94,7 @@ const Footer = () => {
 							-
 						</p>
 						<p>
-							Athlete Wearable Technology collects and processes your data
+							ReflexionPro collects and processes your data
 							in accordance with applicable privacy laws. We ensure your data is used solely for providing 
 							the best experience on our platform.
 						</p>
@@ -102,7 +102,7 @@ const Footer = () => {
 							-
 						</p>
 						<p>
-							For detailed information, please contact us at privacy@athletewearabletech.com
+							For detailed information, please contact us at privacy@reflexionpro.com
 						</p>
 						<button onClick={togglePrivacyModal} className={styles['close-button']}>
 							Close

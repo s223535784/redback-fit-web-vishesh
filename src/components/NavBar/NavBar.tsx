@@ -1,4 +1,4 @@
-import Logo from '../../assets/Logo.svg';
+import Logo from '../../assets/Redback_logo.png';
 import { Link } from 'react-router-dom';
 import styles from '../../routes/HomePage/HomePage.module.css';
 
@@ -6,11 +6,10 @@ const Navbar = () => {
 	return (
 		<nav className={styles.nav}>
 			<div className={styles['nav-logo-container']}>
-				<img
-					src={Logo}
-					alt="Logo"
-					className={styles['nav-logo']}
-				/>
+				<img src={Logo} alt="" />
+			</div>
+			<div style={{ fontWeight: 'bold', fontSize: '2rem', marginRight: '500px' }}>
+				ReflexionPro
 			</div>
 			<div className={styles['navbar-links-container']}>
 				<a href="/" className={styles.link}>Home</a>
@@ -22,4 +21,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
