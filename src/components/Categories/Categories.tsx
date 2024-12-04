@@ -203,7 +203,7 @@ const Categories: React.FC = () => {
 					fontSize: '20px', // Adjust the text size (e.g., 20px, 1.5rem, etc.)
 					fontFamily: 'Arial, sans-serif', // Choose a font family
 				}}>
-          Welcome to the Categories Page. Click to hear about our features and badges.
+           Explore Our Categories! Click to uncover features and badges waiting for you.
 				</p>
 			</div>
 
