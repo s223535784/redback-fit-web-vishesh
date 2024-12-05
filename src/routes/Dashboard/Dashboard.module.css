@@ -10,7 +10,6 @@ body {
   padding: 0;
   color: #212A31; /* Managed in Dashboard.tsx */
   font-family: 'Montserrat', sans-serif;
-  max-width: 500%;
 }
 
 /* Layout Containers */
