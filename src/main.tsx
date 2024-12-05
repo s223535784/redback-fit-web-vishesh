@@ -13,6 +13,7 @@ import Categories from './components/Categories/Categories.tsx';
 import ReportPageContent from './components/Report/ReportPageContent.tsx';
 import Features from './components/Features/Features.tsx';
 import SettingsPage from './components/Settings/Settings.tsx';
+import Goals from './components/Goals/Goals.tsx';
 
 const router = createBrowserRouter([
 	{
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
 					{
 						path: 'features',
 						element: <Features />,
+					},
+					{
+						path: 'goals',
+						element: <Goals />,
 					},
 					{
 						path: 'settings',
