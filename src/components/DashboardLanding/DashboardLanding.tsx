@@ -6,7 +6,7 @@ import { HiBell } from 'react-icons/hi';
 import { FaMagnifyingGlass } from 'react-icons/fa6';
 import styles from '../../routes/Dashboard/Dashboard.module.css';
 import SessionTable from '../SessionsTable/SessionsTable';
-import data from '../SessionsTable/sessionData.json';
+import data from '../SessionsTable/SessionsTable.json';
 import { Gauge } from '@mui/x-charts-pro';
 import Stack from '@mui/material/Stack';
 import { LineChart } from '@mui/x-charts/LineChart';
