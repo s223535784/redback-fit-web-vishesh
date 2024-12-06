@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import './Settings.css';
 
 interface Settings {
-  theme: string;
-  notifications: {
-    email: boolean;
-    sms: boolean;
-    app: boolean;
-  };
-  password: string;
-  twoFactorAuth: boolean;
+	theme: string;
+	notifications: {
+		email: boolean;
+		sms: boolean;
+		app: boolean;
+	};
+	password: string;
+	twoFactorAuth: boolean;
 }
 
 const SettingsPage: React.FC = () => {
@@ -35,7 +35,7 @@ const SettingsPage: React.FC = () => {
 
 	const handleThemeChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
 		setSettings({ ...settings, theme: e.target.value });
-	  };
+	};
 
 	const handleNotificationToggle = (type: string) => {
 		setSettings({
@@ -55,25 +55,25 @@ const SettingsPage: React.FC = () => {
 
 	return (
 		<div className={`settings-container ${settings.theme}`}>
-		  <h1 className="settings-title">Settings</h1>
-		  <form onSubmit={handleSubmit} className="settings-form">
-			<div className="settings-section">
-			  <h2>Preferences</h2>
-			  <div className="form-group">
-				<label htmlFor="theme">Theme:</label>
-				<select
-				  id="theme"
-				  name="theme"
-				  value={settings.theme}
-				  onChange={handleThemeChange}
-				>
-				  <option value="light">Light</option>
-				  <option value="dark">Dark</option>
-				</select>
-			  </div>
-			</div>
+			<h1 className="settings-title">Settings</h1>
+			<form onSubmit={handleSubmit} className="settings-form">
+				<div className="settings-section">
+					<h2>Preferences</h2>
+					<div className="form-group">
+						<label htmlFor="theme">Theme:</label>
+						<select
+							id="theme"
+							name="theme"
+							value={settings.theme}
+							onChange={handleThemeChange}
+						>
+							<option value="light">Light</option>
+							<option value="dark">Dark</option>
+						</select>
+					</div>
+				</div>
 
-				
+
 				<div className="settings-section">
 					<h2>Security</h2>
 					<div className="form-group">
@@ -98,7 +98,7 @@ const SettingsPage: React.FC = () => {
 					</div>
 				</div>
 
-				
+
 				<div className="settings-section">
 					<h2>Notifications</h2>
 					<div className="form-group">
@@ -128,12 +128,12 @@ const SettingsPage: React.FC = () => {
 								checked={settings.notifications.app}
 								onChange={() => handleNotificationToggle('app')}
 							/>
-              				App Notifications
+							App Notifications
 						</label>
 					</div>
 				</div>
 
-				
+
 				<div className="settings-section">
 					<h2>Recent Activity</h2>
 					<ul className="activity-list">

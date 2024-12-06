@@ -23,41 +23,41 @@ const Footer = () => {
 			<div className={styles['footer-section-one']}>
 
 				<div className={styles['footer-icons']}>
-					<a 
-						href="https://x.com/Deakin" 
-						target="_blank" 
+					<a
+						href="https://x.com/Deakin"
+						target="_blank"
 						rel="noopener noreferrer"
 					>
 						<BsTwitter />
 					</a>
-					<a 
-						href="https://www.linkedin.com/company/redback-ops/" 
-						target="_blank" 
+					<a
+						href="https://www.linkedin.com/company/redback-ops/"
+						target="_blank"
 						rel="noopener noreferrer"
 					>
 						<SiLinkedin />
 					</a>
-					<a 
-						href="https://www.youtube.com/@DeakinUniversityAustralia" 
-						target="_blank" 
+					<a
+						href="https://www.youtube.com/@DeakinUniversityAustralia"
+						target="_blank"
 						rel="noopener noreferrer"
 					>
 						<BsYoutube />
 					</a>
-					<a 
-        				href="https://www.instagram.com/redbackoperationsdeakin/" 
-        				target="_blank" 
-        				rel="noopener noreferrer"
-    				>
-        				<FaInstagram />
-    				</a>
-					<a 
-        				href="https://www.facebook.com/DeakinUniversity" 
-        				target="_blank" 
-        				rel="noopener noreferrer"
-    				>
-        				<FaFacebookF />
-    				</a>				
+					<a
+						href="https://www.instagram.com/redbackoperationsdeakin/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<FaInstagram />
+					</a>
+					<a
+						href="https://www.facebook.com/DeakinUniversity"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<FaFacebookF />
+					</a>
 				</div>
 			</div>
 			<div className={styles['footer-section-two']}>
@@ -72,7 +72,7 @@ const Footer = () => {
 					<span onClick={togglePrivacyModal} className={styles['clickable-text']}>Privacy Policy</span>
 				</div>
 			</div>
-	
+
 			{isTermsModalOpen && (
 				<div className={styles['modal-overlay']}>
 					<div className={styles['modal-container']}>
@@ -113,7 +113,7 @@ const Footer = () => {
 						</p>
 						<p>
 							ReflexionPro collects and processes your data
-							in accordance with applicable privacy laws. We ensure your data is used solely for providing 
+							in accordance with applicable privacy laws. We ensure your data is used solely for providing
 							the best experience on our platform.
 						</p>
 						<p>

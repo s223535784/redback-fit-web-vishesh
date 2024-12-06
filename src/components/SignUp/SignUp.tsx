@@ -9,7 +9,7 @@ class SignUp extends Component {
 		messageStyle: {}, // Object to hold dynamic inline styles
 	};
 
-	handleChange = (e: { target: { name: any; value: any; }; }) => {
+	handleChange = (e: { target: { name: string; value: string; }; }) => {
 		this.setState({ [e.target.name]: e.target.value });
 	};
 

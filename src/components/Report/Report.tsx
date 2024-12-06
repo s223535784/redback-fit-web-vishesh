@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import styles from '../../routes/Report/Report.module.css';
+import styles from '../../routes/ReportPage/ReportPage.module.css';
 import ProfilePic from '../../assets/ProfilePic.png'; // Import profile picture
 import SessionTable from '../SessionsTable/SessionsTable';
-import data from '../SessionsTable/sessionData.json';
+import data from '../SessionsTable/SessionsTable.json';
 import { Card, CardContent, Typography, Grid, CircularProgress, Box } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { FavoriteBorderRounded, MonitorHeartRounded, FitnessCenterRounded, StackedLineChartRounded, BoltRounded, StairsRounded, DirectionsWalkRounded, AirlineSeatFlatAngledRounded } from '@mui/icons-material';
@@ -54,8 +54,11 @@ const records = [
 ];
 
 const DashboardLanding: React.FC = () => {
-	// State for selected data
-	const [] = useState(records[0]);
+
+	const [selectedRecord] = useState(records[0]);
+
+	// Example of using the state
+	console.log(selectedRecord);
 
 	// Handle record selection
 

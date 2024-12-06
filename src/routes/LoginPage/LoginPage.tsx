@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Login.style.css';
+import './LoginPage.style.css';
 import Logo from '../../assets/Redback_logo.png';
 import SignUp from '../../components/SignUp/SignUp.tsx';
 import Signin from '../../components/SignIn/SignIn.tsx';
